@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+        <title>Minijuego!-MOAISFTW</title>
+        <script type='text/javascript' src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script type="text/javascript" src= "js/main2.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'> 
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+		
+
+	</head>
+	
+	<body>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        
+		<header>
+           
+     	</header>   
+        
+        <div class="container">
+          
+            <div class="row">
+                <div class="col-md-8 fondopaneles">
+                    
+                       <div class="jumbotron text-center"> <h3>Enchulame el Youtuber!</h3></div>
+                           <div class="row">
+                               <div class="col-md-5">
+	                               <canvas id="canvas" width=320 height=480></canvas>
+                                  <button onclick="clearcanvas1()">Limpia</button>
+                                   <button onclick="saveImage()">Guardalo !</button>
+                                    <div class="instrucciones">
+                        <h3>Instrucciones</h3>
+                                <p> Para usar arrastra las imágenes desde las apestañas al paisaje
+                                   </p>
+                                <p>  Para guardar la imagen pulsá el boton guardalo, cuando te pregunte que hacer con el archivo y veas un nombre rarisimo, renombralo añadiendo SIEMPRE .png al final</p>
+            
+            </div>
+                                </div>
+                                    <div class="col-md-7">
+                                        <div>
+                                            <div id="tabs">
+                      <ul>
+                        <li><a class="letra-chica" href="#tabs-1">Bases</a></li>
+                        <li><a class="letra-chica" href="#tabs-2">Cabeza</a></li>
+                        <li><a class="letra-chica" href="#tabs-3">torso</a></li>
+                        <li><a class="letra-chica" href="#tabs-4">Piernitas</a></li>
+                        <li><a class="letra-chica" href="#tabs-5">Emo</a></li>
+                      </ul>
+                        <div id="tabs-1">
+                        <img id="house" src="minigamecont/base.png">
+                        <img id="house5" src="minigamecont/stax.png">
+                        <img id="house6" src="minigamecont/vadexby.png"> 
+                        <img id="house7" src="minigamecont/vegeta.png">
+
+                        </div>
+
+                        <div id="tabs-2">
+                            <img id="house2" src="minigamecont/cabezamoai.png">
+                            <img id="house9" src="minigamecont/casco1.png">
+                            <img id="house44" src="minigamecont/casco2.png">
+                            <img id="house45" src="minigamecont/casco3.png">
+                            <img id="house46" src="minigamecont/pelo1.png">
+                            <img id="house47" src="minigamecont/pelo2.png">
+                            <img id="house48" src="minigamecont/pelo3.png">
+                            <img id="house49" src="minigamecont/pelo4.png">
+                            <img id="house50" src="minigamecont/pelo5.png">
+                            <img id="house51" src="minigamecont/pelo6.png">
+                            <img id="house52" src="minigamecont/pelo7.png">
+
+                          </div>
+
+                          <div id="tabs-3">
+                           <img id="house4" src="minigamecont/camisa.png">
+                           <img id="house8" src="minigamecont/campera1.png">
+                           <img id="house53" src="minigamecont/campera2.png">
+                           <img id="house54" src="minigamecont/buzo1.png">
+                           <img id="house55" src="minigamecont/buzo2.png">
+                           <img id="house56" src="minigamecont/buzo3.png">
+                           <img id="house57" src="minigamecont/corse%201.png">
+                           <img id="house58" src="minigamecont/muscunaranja.png">
+                           <img id="house59" src="minigamecont/remeranegra.png">
+                           <img id="house60" src="minigamecont/remeraroja.png">
+                           <img id="house61" src="minigamecont/remerazombie.png">
+                           <img id="house62" src="minigamecont/remerazul.png">
+                           <img id="house63" src="minigamecont/sosten1.png">
+                           <img id="house64" src="minigamecont/sosten2.png">
+                           <img id="house65" src="minigamecont/sosten3.png">
+                           <img id="house66" src="minigamecont/traje.png">
+                           <img id="house70" src="minigamecont/guantes1.png">
+                            </div>
+                          <div id="tabs-4">
+                           <img id="house3" src="minigamecont/faldita.png">
+                           <img id="house10" src="minigamecont/zunga1.png">
+                           <img id="house17" src="minigamecont/zunga2.png">
+                           <img id="house35" src="minigamecont/panta1.png">
+                           <img id="house36" src="minigamecont/panta2.png">
+                           <img id="house37" src="minigamecont/panta3.png">
+                           <img id="house38" src="minigamecont/panta4.png">
+                           <img id="house39" src="minigamecont/traje2.png">
+                           <img id="house40" src="minigamecont/calza1.png">
+                           <img id="house68" src="minigamecont/botas1.png">
+                           <img id="house69" src="minigamecont/botas2.png">
+                           <img id="house71" src="minigamecont/zapa1.png">
+                          </div>
+                          <div id="tabs-5">
+                           <img id="house11" src="minigamecont/exp1.png">
+                           <img id="house12" src="minigamecont/exp2.png">
+                           <img id="house13" src="minigamecont/exp3.png">
+                           <img id="house14" src="minigamecont/exp4.png">
+                           <img id="house15" src="minigamecont/exp5.png">
+                           <img id="house16" src="minigamecont/exp6.png">
+                           <img id="house18" src="minigamecont/rage1.png">
+                           <img id="house19" src="minigamecont/troll.png">
+                           <img id="house20" src="minigamecont/guat.png">
+                           <img id="house21" src="minigamecont/meh.png">
+                           <img id="house22" src="minigamecont/kaguai.png">
+                           <img id="house23" src="minigamecont/exp6.png">
+                           <img id="house24" src="minigamecont/guat.png">
+                           <img id="house25" src="minigamecont/exp7.png">
+                           <img id="house26" src="minigamecont/normal.png">
+                           <img id="house27" src="minigamecont/ojo1.png">
+                           <img id="house28" src="minigamecont/ojo9.png">
+                           <img id="house29" src="minigamecont/ojo2.png">
+                           <img id="house30" src="minigamecont/ojo3.png">
+                           <img id="house31" src="minigamecont/ojo4.png">
+                           <img id="house32" src="minigamecont/ojo5.png">
+                           <img id="house33" src="minigamecont/ojo6.png">
+                           <img id="house34" src="minigamecont/ojo7.png">
+                           <img id="house41" src="minigamecont/bigote.png">
+                           <img id="house42" src="minigamecont/crazy.png">
+                           <img id="house43" src="minigamecont/beso.png">
+                           <img id="house67" src="minigamecont/swag.png">
+                          </div>
+                    </div>
+            </div>
+                                    
+
+        </div>
+
+
+    </div>
+
+
+</div>	
+	                     
+     
+            
+               
+            
+        </div>
+        <footer>
+        
+                
+        </footer>
+	</body>
+	</html>

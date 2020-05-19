@@ -1,0 +1,84 @@
+
+body{
+	background-image: url("img/fondo.png");
+    background-size: 200px, 200px, auto;
+    }
+
+.titulo{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px  #82949a;
+    border-radius: 25px;
+}
+
+.in-line-block{
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
+.no-lista{
+	margin: 0px;
+	padding: 2px;	   	
+}
+
+.espacio-arriba{
+	margin-top: 15px;
+	
+
+}
+.quitar-float{
+	float: none;
+}
+
+.padding-largo{
+	padding: 5px;
+}
+
+.fondopaneles{
+    background-color: blanchedalmond;
+    border-radius:15px;
+    margin:10px;
+    padding:10px;
+}
+article{
+    text-align: justify;
+}
+
+a, h3{
+    font-family: 'Denk One', sans-serif;
+    font-size: 30px;
+    color: darkmagenta;
+}
+.tumbler{
+    width:100% ;
+    height:900px;
+       
+}
+.jumbotron{
+    background-color: burlywood;
+    border-radius: 2px;
+    font-family: 'Raleway', bold;
+    color: floralwhite;
+    font-weight: 
+}
+
+
+#blanquete{
+    height: 800px;
+    width: auto;
+}
+
+  
+
+.letra-chica {
+    font-size:15px;
+    }
+canvas {
+    background-image: url(minigamecont/fondocanvas.png);
+}
+.instrucciones{
+    background-color: #fcf5ec;
+    border-radius: 2px;
+    font-family: 'Raleway';
+}
+    
